@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: august-ai
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: 7713329027:AAFtrls0GEVaVQv97LM_nK2X2U0ZYxYQsNo
+        fromGroup: telegram
+      - key: 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
+        fromGroup: groq
